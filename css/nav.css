@@ -1,0 +1,93 @@
+/* ============================================================
+   NAV.CSS — Floating dot navigation
+   ============================================================ */
+
+.dot-nav {
+  position: fixed;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.dot-nav__track {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.dot {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dot-inactive);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dot::after {
+  content: attr(data-label);
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  color: var(--text-soft);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.dot:hover::after { opacity: 1; }
+
+.dot:hover,
+.dot.active {
+  background: var(--dot-active);
+  transform: scale(1.4);
+  box-shadow: 0 0 8px var(--glow);
+}
+
+/* ── THEME TOGGLE ── */
+.theme-toggle {
+  position: fixed;
+  bottom: 32px;
+  right: 28px;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--toggle-bg);
+  border: 1px solid var(--border);
+  color: var(--toggle-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 16px var(--glow);
+}
+
+.theme-toggle__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle__icon svg { width: 18px; height: 18px; }
+
+[data-theme="onshore"] .theme-toggle__sun  { opacity: 1; transform: scale(1); }
+[data-theme="onshore"] .theme-toggle__moon { opacity: 0; transform: scale(0.6); }
+[data-theme="deepsea"] .theme-toggle__sun  { opacity: 0; transform: scale(0.6); }
+[data-theme="deepsea"] .theme-toggle__moon { opacity: 1; transform: scale(1); }

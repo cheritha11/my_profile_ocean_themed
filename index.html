@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="onshore">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malreddy Sree Cheritha — Portfolio</title>
+  <meta name="description" content="Portfolio of Malreddy Sree Cheritha — Data Science student at Sphoorthy Engineering College. Open to internships across tech, data, and beyond." />
+  <meta property="og:title" content="Malreddy Sree Cheritha — Portfolio" />
+  <meta property="og:description" content="Exploring problems. Engineering solutions." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- CANVAS BACKGROUNDS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- FLOATING DOT NAV -->
+  <nav class="dot-nav" id="dotNav">
+    <div class="dot-nav__track">
+      <a class="dot" data-section="hero"      data-label="Home"      href="#hero"></a>
+      <a class="dot" data-section="about"     data-label="About"     href="#about"></a>
+      <a class="dot" data-section="education" data-label="Education" href="#education"></a>
+      <a class="dot" data-section="skills"    data-label="Skills"    href="#skills"></a>
+      <a class="dot" data-section="projects"  data-label="Projects"  href="#projects"></a>
+      <a class="dot" data-section="resume"    data-label="Resume"    href="#resume"></a>
+      <a class="dot" data-section="contact"   data-label="Contact"   href="#contact"></a>
+    </div>
+  </nav>
+
+  <!-- THEME TOGGLE -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span class="theme-toggle__icon theme-toggle__sun">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </span>
+    <span class="theme-toggle__icon theme-toggle__moon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </span>
+  </button>
+
+  <!-- HERO -->
+  <section id="hero" class="section section--hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Malreddy Sree Cheritha</p>
+        <h1 class="hero__name">Cheritha.</h1>
+        <p class="hero__tagline">Exploring problems.<br>Engineering solutions.</p>
+        <p class="hero__meta">B.Tech Data Science &middot; Sphoorthy Engineering College &middot; 2027</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#projects">View Work</a>
+          <a class="btn btn--ghost" href="assets/resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__avatar-ring">
+          <div class="hero__avatar">
+             <img src="assets/images/profile.png" alt="Cheritha" />
+    
+          </div>
+          <svg class="hero__ring-svg" viewBox="0 0 200 200">
+            <circle class="ring ring--1" cx="100" cy="100" r="90"/>
+            <circle class="ring ring--2" cx="100" cy="100" r="78"/>
+          </svg>
+        </div>
+        <div class="hero__status">
+          <span class="status-dot"></span>
+          Open to internships
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section__inner">
+      <div class="section__label">01 &mdash; About Me</div>
+      <div class="about__grid">
+        <h2 class="section__heading">Who I am.</h2>
+        <div class="about__body">
+          <p class="about__bio">
+            An undergraduate B.Tech Data Science student at Sphoorthy Engineering College, graduating in 2027.
+            I work with data, build things, break them, and figure out why. My interests span machine learning,
+            analytics, and software development — but what drives me more than any specific tool is the process
+            of turning a messy problem into a clean solution.
+          </p>
+          <p class="about__bio">
+            I learn fast, adapt faster, and bring genuine curiosity to whatever I work on.
+            Actively seeking internship opportunities where I can contribute and grow.
+          </p>
+          <div class="about__tags">
+            <span class="tag">Data Analytics</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Software Development</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Research</span>
+            <span class="tag">Open to All Domains</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="section__inner">
+      <div class="section__label">02 &mdash; Education</div>
+      <h2 class="section__heading">Academic path.</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__year">2023 &ndash; 2027</div>
+          <div class="timeline__card">
+            <div class="timeline__degree">B.Tech in Data Science</div>
+            <div class="timeline__institution">Sphoorthy Engineering College, Hyderabad</div>
+            <div class="timeline__detail">Relevant coursework: Machine Learning &amp; AI, Software Testing &amp; Methodologies, Ethical Hacking, Data Analytics, Database Systems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section__inner">
+      <div class="section__label">03 &mdash; Skills</div>
+      <h2 class="section__heading">What I work with.</h2>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <div class="skill-card__category">Languages</div>
+          <div class="skill-card__pills">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">R</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__category">ML &amp; Data</div>
+          <div class="skill-card__pills">
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">XGBoost</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">SMOTE</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__category">Frameworks &amp; Tools</div>
+          <div class="skill-card__pills">
+            <span class="pill">Flask</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__category">Visualisation</div>
+          <div class="skill-card__pills">
+            <span class="pill">Chart.js</span>
+            <span class="pill">Plotly</span>
+            <span class="pill">Matplotlib</span>
+            <span class="pill">Seaborn</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__category">Other</div>
+          <div class="skill-card__pills">
+            <span class="pill">Software Testing</span>
+            <span class="pill">Ethical Hacking</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">Data Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section__inner">
+      <div class="section__label">04 &mdash; Projects</div>
+      <h2 class="section__heading">Things I have built.</h2>
+      <div class="projects__grid">
+
+        <div class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__number">01</span>
+            <a class="project-card__link" href="https://github.com/cheritha11/commercepulse" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+          <h3 class="project-card__name">CommercePulse</h3>
+          <p class="project-card__desc">E-commerce analytics platform built on 20M+ real events. Features customer segmentation using RFM analysis, churn prediction, sales forecasting, and a full REST API with interactive dashboard.</p>
+          <div class="project-card__tags">
+            <span class="pill pill--sm">Python</span>
+            <span class="pill pill--sm">Flask</span>
+            <span class="pill pill--sm">ML</span>
+            <span class="pill pill--sm">Chart.js</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__number">02</span>
+            <a class="project-card__link" href="https://github.com/cheritha11/heritage_site_preservation" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+          <h3 class="project-card__name">Heritage Vulnerability Model</h3>
+          <p class="project-card__desc">ML model evaluating risk across 44 Indian UNESCO heritage sites. Achieved 92.47% accuracy using Gradient Boosting with SMOTE for class imbalance correction and GridSearchCV for tuning.</p>
+          <div class="project-card__tags">
+            <span class="pill pill--sm">FastAPI</span>
+            <span class="pill pill--sm">Gradient Boosting</span>
+            <span class="pill pill--sm">SMOTE</span>
+            <span class="pill pill--sm">Chart.js</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card--placeholder">
+          <div class="project-card__placeholder-text">More coming soon</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- RESUME -->
+  <section id="resume" class="section">
+    <div class="section__inner">
+      <div class="section__label">05 &mdash; Resume</div>
+      <h2 class="section__heading">My resume.</h2>
+      <div class="resume__card">
+        <div class="resume__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="48" height="48">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <div class="resume__info">
+          <p class="resume__name">Malreddy Sree Cheritha</p>
+          <p class="resume__sub">B.Tech Data Science &middot; Class of 2027</p>
+          <p class="resume__desc">Download my resume to view my full academic background, projects, and skills.</p>
+        </div>
+        <div class="resume__actions">
+          <a class="btn btn--primary" href="assets/resume.pdf" download>Download PDF</a>
+          <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank">Open in browser</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="section__inner">
+      <div class="section__label">06 &mdash; Contact</div>
+      <h2 class="section__heading contact__heading">Let us work<br><em>together.</em></h2>
+      <p class="contact__sub">Open to internships across tech, data, and beyond. Based in Hyderabad, India.</p>
+      <div class="contact__links">
+          <span class="contact__link-label">Email</span>
+          <span class="contact__link-value">malreddysreecheritha@gmail.com</span>
+        </a>
+        <a class="contact__link" href="https://linkedin.com/in/malreddysreecheritha" target="_blank" rel="noopener">
+          <span class="contact__link-label">LinkedIn</span>
+          <span class="contact__link-value">linkedin.com/in/malreddysreecheritha</span>
+        </a>
+        <a class="contact__link" href="https://github.com/cheritha11" target="_blank" rel="noopener">
+          <span class="contact__link-label">GitHub</span>
+          <span class="contact__link-value">github.com/cheritha11</span>
+        </a>
+      </div>
+    </div>
+    <footer class="footer">
+      <span>Malreddy Sree Cheritha &copy; 2026</span>
+    </footer>
+  </section>
+
+  <script src="js/theme.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

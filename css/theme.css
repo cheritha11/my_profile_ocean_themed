@@ -1,0 +1,144 @@
+/* ============================================================
+   THEME.CSS — On Shore (light) & Deep Sea (dark) tokens
+   ============================================================ */
+
+/* ── ON SHORE (default light) ── */
+[data-theme="onshore"] {
+  --bg:           #F2EDE4;
+  --bg-2:         #EAE3D6;
+  --surface:      #FFFDF7;
+  --surface-2:    #F5EFE4;
+  --border:       rgba(150, 120, 80, 0.18);
+  --text:         #1C2E38;
+  --text-soft:    #4A6470;
+  --text-muted:   #8A9FA8;
+  --accent:       #2A7E8E;
+  --accent-2:     #C07A4A;
+  --glow:         rgba(42, 126, 142, 0.15);
+  --pill-bg:      rgba(42, 126, 142, 0.08);
+  --pill-border:  rgba(42, 126, 142, 0.25);
+  --pill-text:    #1A5A68;
+  --tag-bg:       rgba(192, 122, 74, 0.1);
+  --tag-text:     #7A4A28;
+  --btn-primary-bg:    #1C2E38;
+  --btn-primary-text:  #F2EDE4;
+  --btn-ghost-border:  rgba(28, 46, 56, 0.35);
+  --btn-ghost-text:    #1C2E38;
+  --dot-active:   #2A7E8E;
+  --dot-inactive: rgba(42, 126, 142, 0.25);
+  --toggle-bg:    rgba(42, 126, 142, 0.12);
+  --toggle-text:  #2A7E8E;
+  --ring-color:   rgba(42, 126, 142, 0.3);
+  --ring-color-2: rgba(192, 122, 74, 0.2);
+  --status-color: #2A7E8E;
+  --timeline-line: rgba(42,126,142,0.2);
+  --footer-border: rgba(28,46,56,0.1);
+}
+
+/* ── DEEP SEA (dark) ── */
+[data-theme="deepsea"] {
+  --bg:           #020D1C;
+  --bg-2:         #040F20;
+  --surface:      #071628;
+  --surface-2:    #091D33;
+  --border:       rgba(0, 180, 220, 0.12);
+  --text:         #C8E8F5;
+  --text-soft:    #7AB8D4;
+  --text-muted:   #3A6880;
+  --accent:       #00B4D8;
+  --accent-2:     #0077A8;
+  --glow:         rgba(0, 180, 216, 0.2);
+  --pill-bg:      rgba(0, 180, 216, 0.08);
+  --pill-border:  rgba(0, 180, 216, 0.22);
+  --pill-text:    #00D4F8;
+  --tag-bg:       rgba(0, 120, 168, 0.18);
+  --tag-text:     #60C8E8;
+  --btn-primary-bg:    #00B4D8;
+  --btn-primary-text:  #020D1C;
+  --btn-ghost-border:  rgba(0, 180, 216, 0.4);
+  --btn-ghost-text:    #00B4D8;
+  --dot-active:   #00B4D8;
+  --dot-inactive: rgba(0, 180, 216, 0.2);
+  --toggle-bg:    rgba(0, 180, 216, 0.1);
+  --toggle-text:  #00B4D8;
+  --ring-color:   rgba(0, 180, 216, 0.35);
+  --ring-color-2: rgba(0, 80, 168, 0.3);
+  --status-color: #00D4F8;
+  --timeline-line: rgba(0,180,216,0.2);
+  --footer-border: rgba(0,180,216,0.1);
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.btn--primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.btn--primary:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.btn--ghost {
+  border: 1px solid var(--btn-ghost-border);
+  color: var(--btn-ghost-text);
+}
+.btn--ghost:hover {
+  background: var(--glow);
+  transform: translateY(-1px);
+}
+
+.pill {
+  background: var(--pill-bg);
+  border: 1px solid var(--pill-border);
+  color: var(--pill-text);
+}
+
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.timeline__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.contact__link {
+  border-bottom: 1px solid var(--border);
+}
+.contact__link:hover .contact__link-value {
+  color: var(--accent);
+}
+
+/* Smooth theme transition */
+body, .skill-card, .project-card, .timeline__card,
+.btn, .pill, .tag, .contact__link, nav, footer {
+  transition: background-color 0.5s ease, color 0.5s ease,
+              border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* ── Glass section backing ── */
+[data-theme="onshore"] {
+  --section-glass:  rgba(245, 240, 230, 0.82);
+  --section-shadow: rgba(100, 120, 100, 0.08);
+}
+
+[data-theme="deepsea"] {
+  --section-glass:  rgba(4, 18, 40, 0.78);
+  --section-shadow: rgba(0, 60, 120, 0.25);
+}
